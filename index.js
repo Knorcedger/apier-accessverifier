@@ -20,7 +20,9 @@ exports.init = function(config) {
 		}
 	}
 
-	if (!hasConfiguration) {
+	if (hasConfiguration) {
+		reqlog.info('accessVerifier', 'Configuration found!');
+	} else {
 		reqlog.error('accessVerifier',
 			'No access configuration! No verification will be done!');
 	}
