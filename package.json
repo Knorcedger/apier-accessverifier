@@ -1,0 +1,29 @@
+{
+  "name": "apier-accessverifier",
+  "description": "Checks if the incoming request has is allowed to access the endpoint",
+  "version": "1.0.0",
+  "author": "Knorcedger",
+  "bugs": "https://github.com/Knorcedger/apier-accessverifier/issues",
+  "dependencies": {
+    "apier-responsebuilder": "^1.1.0",
+    "reqlog": "^1.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^2.2.0",
+    "eslint-config-google": "^0.4.0"
+  },
+  "homepage": "https://github.com/Knorcedger/apier-accessverifier",
+  "keywords": [
+    "access-verifier",
+    "api",
+    "apier"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Knorcedger/apier-accessverifier"
+  },
+  "scripts": {
+    "test": "eslint index.js"
+  }
+}
