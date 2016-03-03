@@ -1,7 +1,7 @@
 {
   "name": "apier-accessverifier",
   "description": "Checks if the incoming request has is allowed to access the endpoint",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Knorcedger",
   "bugs": "https://github.com/Knorcedger/apier-accessverifier/issues",
   "dependencies": {
