@@ -1,20 +1,17 @@
-// var nconf = require('nconf');
 var responseBuilder = require('apier-responsebuilder');
 var reqlog = require('reqlog');
 
-var access;
 var keys;
 var verifyOrigin;
 
 // utility function that verifies that access configuration exists
 exports.init = function(config) {
 	var hasConfiguration = true;
-	access = config.get('access');
-	if (access === null || typeof access !== 'object') {
+	if (config === null || typeof config !== 'object') {
 		hasConfiguration = false;
 	} else {
-		verifyOrigin = access.verifyOrigin;
-		keys = access.apikeys;
+		verifyOrigin = config.verifyOrigin;
+		keys = config.apikeys;
 		if (!keys) {
 			hasConfiguration = false;
 		}
